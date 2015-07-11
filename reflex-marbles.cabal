@@ -17,7 +17,8 @@ cabal-version:       >=1.10
 
 executable reflex-marbles
   main-is:             Main.hs
-  -- other-modules:       
+  other-modules:       Reflex.Pure
+                       Marbles.Eval
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.9
                      , reflex
