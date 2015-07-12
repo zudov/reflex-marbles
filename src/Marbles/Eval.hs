@@ -15,8 +15,7 @@ import           Reflex.Class
 
 import qualified Reflex.Pure   as P
 
-type Time = Word8
-
+type Time = Int
 
 newtype MarbleEvent = MarbleEvent (Map Time Marble) deriving (Show)
 
@@ -24,7 +23,7 @@ eventTimes :: MarbleEvent -> [Time]
 eventTimes (MarbleEvent m) = Map.keys m
 
 newtype MarbleBehaviour = MarbleBehaviour (Marble, Map Time Marble) deriving (Show)
-newtype Marble = Marble Char deriving (Show)
+newtype Marble = Marble Char deriving (Show, Eq) 
 
 type TimeM = (->) Time
 runTimeM :: TimeM b -> b
