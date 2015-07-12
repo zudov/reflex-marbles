@@ -1,0 +1,84 @@
+
+body {
+  margin-top: 20px;
+}
+
+#parent {
+  width: 100%;
+  position: relative;
+  background-color: green;
+  height: 50px;
+}
+
+#slider {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: red;
+}
+
+.demo {
+  padding: 10px;
+}
+
+.demo .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.demo .col-md-11 {
+  padding-left: 0;
+}
+
+.marbleInput {
+  display: inline-block;
+}
+
+.functionHeader {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.timeline {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  position: absolute;
+}
+
+.marbleEvent, .marbleBehaviour {
+  position: relative;
+  margin-bottom: 10px;
+  top: 18px;
+  width: 1000px;
+}
+
+.marbleBehaviour {
+  height: 25px;
+}
+.marbleBehaviour .marble {
+  border-radius: 0%;
+  margin: 1px;
+}
+
+.functionName {
+  text-align: right;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1.5em
+}
+.functionArgs {
+}
+
+.marble {
+  position: absolute;
+  display: inline-block;
+  border: solid 1px black;
+  width: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  top: -12px;
+  height: 25px;
+}
