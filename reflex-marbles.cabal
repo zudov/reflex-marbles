@@ -22,6 +22,7 @@ executable reflex-marbles
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.9
                      , reflex
+                     , reflex-dom
                      , dependent-map
                      , MemoTrie
                      , containers
